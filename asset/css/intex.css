@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap');
+
+
+.col-lg-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar .navbar-brand-wrapper {
+    background: #ffffff;
+    width: 235px;
+    height: 60px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-control {
+    height: 45px;
+    width: 100%;
+    border-radius: 20px;
+    padding-right: 40px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    cursor: pointer;
+}
+
+a{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #2d2d2d;
+        font-size: smaller;
+        padding-left: 5px;
+}
+
+.sidebar{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.btn2{
+    height: 35px;
+    border-radius: 10px;
+}
+
+.btn-check:checked + .btn2 {
+    background-color: white;
+    border: none;
+}
+
+#colorDiv{
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .input-group {
+        display: none !important;
+    }
+}
+
+@media (max-width: 426px) {
+    .mob {
+        display: none !important;
+    }
+    .brand-logo-mini{
+        display: none !important;
+    }
+    .brandlogo{
+        margin-left: -60px !important ;
+        margin-right: -30px !important;
+    }
+    .third{
+      display: none !important;
+    }
+
+}
+
+@media (max-width:769px){
+    .sidenav{
+        display: none !important;
+    }
+    .forslide{
+        display: none !important ;
+    }
+}
+
+
+
+
+
