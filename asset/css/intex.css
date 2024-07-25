@@ -73,6 +73,25 @@ a{
   background-color: rgb(255, 255, 255);
 }
 
+/* table */
+
+thead th{
+    position: sticky;
+    border-collapse: collapse;
+}
+
+.table-section{
+    height: 350px;
+    overflow: auto;
+    
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
 
 
 
@@ -85,13 +104,7 @@ a{
 @media (max-width: 436px) {
     .mob {
         display: none !important;
-    }
-    .brand-logo-mini{
-        display: none !important;
-    }
-    .brandlogo{
-        margin-left: -60px !important ;
-        margin-right: -30px !important;
+        
     }
     .third{
       display: none !important;
