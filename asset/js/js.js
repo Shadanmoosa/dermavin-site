@@ -60,11 +60,14 @@ function myFunction() {
           document.getElementById('colorDiv').style.backgroundColor="white";
       }
 
+      a=document.getElementsByName('sideimage').style.Color;
+      if (a=="white"){
+          document.getElementsByName('sideimage').style.Color="rgb(33, 37, 41)";
+      }
+      else
+      {
+          document.getElementsByName('sideimage').style.backgroundColor="white";
+      }
 
-
-
-
-
-    
     
   }
