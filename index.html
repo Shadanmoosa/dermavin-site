@@ -13,10 +13,11 @@
 
     </style>
 </head>
-<body>
+<body data-bs-theme="dark">
+
 
 <!-- for toggle -->
-<div class="position-fixed  col-lg-3" id="colorDiv" style=" height:120%; width: 266px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.115); margin-top: -40px; z-index:-2 ;  ">
+<div class="position-fixed  col-lg-3" id="colorDiv " style=" height:120%; width: 266px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.115); margin-top: -40px; z-index:-2 ; ">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center " aria-expanded="false" style="margin-top: 50px; margin-right: 30px;" >
         <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="asset/image/logo.png" class="mr-2"  ></a>
         <a class="navbar-brand " href="" style="margin-right: 30px;"><img src="asset/image/Dermavin.png" ></a>
@@ -89,6 +90,7 @@
             <a href="index.html" style="text-decoration: none;">Settings</a>  
             </button>
         </li>
+        
         <li class="nav-item sidebar" style="margin-top: 2   0px;">
             <button class="btn btn1">
             <img class="sideimage" src="asset/image/Log Out.png" alt="">
@@ -99,11 +101,9 @@
 </div>
 
 
-
-
 <!-- main section  -->
 
-<section style="background-color: #ffffff;">
+<section id="main" style="background-color: rgb(33, 37, 41) ;">
 
     <nav class="navbar col-lg-12 col-12 p-0  d-flex justify-content-between ">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center brandlogo" id="clickableImage">
@@ -136,12 +136,24 @@
     
      <section class="d-flex">
      <!-- sidebar -->
-    <nav class="position-fixed sidenav col-lg-3" style="background-color: rgb(255, 255, 255); height: 1024px; width: 266px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.115); margin-top: -90px; " >
+    <nav class="position-fixed sidenav col-lg-3" id="side" style="background-color: rgb(33, 37, 41); height: 1024px; width: 266px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.115); margin-top: -90px;  " >
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center " aria-expanded="false" style="margin-top: 50px;" >
             <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="asset/image/logo.png" class="mr-2"  ></a>
             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="asset/image/Dermavin.png" ></a>
         </div>
-        <ul style="padding-top: 30px;" class="nav row">
+        <ul style="padding-top: px;" class="nav row">
+            <li class="nav-item sidebar ">
+                <div class="form-check form-switch mx-4">
+                    <input
+                      class="form-check-input p-2"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                      checked
+                      onclick="myFunction()"
+                    />
+                </div>
+            </li>
             <li class="nav-item sidebar ">
                 <button class="btn btn1">
                 <img class="sideimage" src="asset/image/dashboard.png" alt="">
@@ -222,26 +234,27 @@
 <!--main section  -->
     <div style="margin-top: 30px; margin-right: -25px; margin-left: 15px;" class="col-sm-12 col-md-8 col-lg-6">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 firstimage "  >
-                <div style="border: none;">
-                    <img src="asset/image/00304417818-p.jpg" class="card-img-top" alt="White Vintage Tuxedo">
+
+            <div class="col-lg-4 col-md-4 col-sm-4 firstimage">
+                <div class="card mb-3" style="border: none;">
+                    <img src="asset/image/06224331898-p.jpg" class="card-img-top" alt="White Vintage Tuxedo">
                     <div class="card-body">
-                        <h6 class="card-title" style="font-weight: bold;">White Vintage Tuxedo</h6>
+                        <h6 class="card-title" style="font-weight: bold;">Mocca Night Gown</h6>
                         <div class="d-flex align-items-end justify-content-between">
-                            <p class="card-text" ><small class="text-body-secondary">$119.00</small></p>
+                            <p class="card-text" ><small class="text-body-secondary">$190,00</small></p>
                             <p class="card-text" style="margin-bottom: 15px;"><small class="text-body-secondary">45 views</small></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 firstimage"> 
-                <div style="border: none;">
-                    <img src="asset/image/04090303801-p.jpg" class="card-img-top" alt="White Vintage Tuxedo" >
+            <div class="col-lg-4 col-md-4 col-sm-4 firstimage">
+                <div class="card mb-3" style="border: none;">
+                    <img src="asset/image/00304417818-p.jpg" class="card-img-top" alt="White Vintage Tuxedo">
                     <div class="card-body">
-                        <h6 class="card-title" style="font-weight: bold;">Blue Stripes Dress</h6>
+                        <h6 class="card-title" style="font-weight: bold;">Mocca Night Gown</h6>
                         <div class="d-flex align-items-end justify-content-between">
-                            <p class="card-text" ><small     class="text-body-secondary">$290,00</small></p>
+                            <p class="card-text" ><small class="text-body-secondary">$190,00</small></p>
                             <p class="card-text" style="margin-bottom: 15px;"><small class="text-body-secondary">45 views</small></p>
                         </div>
                     </div>
@@ -265,7 +278,7 @@
         <div class="row col-md-12 grid-margin stretch-card tablewraper " style="box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.26); padding-top: 25px; border-radius: 5px;" >
             <div>
                 <div class="d-flex flex-row justify-content-between">
-                    <div style="background-color: #efefef; padding: 5px; border-radius: 10px;">
+                    <div style="background-color:rgb(33, 37, 41); padding: 5px; border-radius: 10px;" id="side3">
                         <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
                         <label class="btn btn2" for="option5">All</label>
         
@@ -396,7 +409,7 @@
                     <p style="font-weight: bold;">$350,00/$4000</p>
                  </div>
                  <h5>Payment</h5>
-                 <div style="background-color: #ffffff; padding: 20px; margin: 15px; border-radius: 20px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.218);" class="d-flex justify-content-center align-items-end  " >
+                 <div style="background-color: rgb(33, 37, 41); padding: 20px; margin: 15px; border-radius: 20px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.218);" class="d-flex justify-content-center align-items-end " id="side1" >
                     <img src="asset/image/4.jpg" style="height: 80px; border-radius: 20px;" class="paymentimage"  alt="">
                     <div style="width: 15px;"></div>
                     <div>
@@ -405,7 +418,7 @@
                     </div>
                  </div>
 
-                 <div style="background-color: #ffffff; padding: 20px; margin: 15px; border-radius: 20px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.218);" class="d-flex justify-content-center align-items-end " >
+                 <div style="background-color: rgb(33, 37, 41); padding: 20px; margin: 15px; border-radius: 20px; box-shadow: 2px 2px 20px rgba(116, 115, 115, 0.218);" class="d-flex justify-content-center align-items-end " id="side2" >
                     <img src="asset/image/5.jpg " style="height: 80px; border-radius: 20px;" class="paymentimage"  alt="">
                     <div style="width: 15px;"></div>
                     <div>
