@@ -99,6 +99,9 @@ table{
     .input-group {
         display: none !important;
     }
+    .paymentimage{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 436px) {
@@ -118,6 +121,9 @@ table{
     }
     .forslide{
         display: none !important ;
+    }
+    .brandlogo{
+        margin-left: 20px;
     }
 }
 
