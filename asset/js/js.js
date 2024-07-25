@@ -51,6 +51,16 @@ function myFunction() {
           document.getElementById('side3').style.backgroundColor="ghostwhite";
       }
 
+      a=document.getElementById('side3').style.backgroundColor;
+      if (a=="ghostwhite"){
+          document.getElementById('side3').style.backgroundColor="rgb(33, 37, 41)";
+      }
+      else
+      {
+          document.getElementById('side3').style.backgroundColor="ghostwhite";
+      }
+
+
 
     
     
