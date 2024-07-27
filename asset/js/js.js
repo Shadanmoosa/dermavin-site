@@ -62,12 +62,22 @@ function myFunction() {
 
       a=document.getElementsByName('sideimage').style.Color;
       if (a=="white"){
+<<<<<<< HEAD
           document.getElementsByName('sideimage').style.Color="rgb(33, 37, 41)";
       }
       else
       {
           document.getElementsByName('sideimage').style.backgroundColor="white";
       }
+=======
+          document.getElementsByName('colorDiv').style.Color="rgb(33, 37, 41)";
+      }
+      else
+      {
+          document.getElementsByName('colorDiv').style.backgroundColor="white";
+      }
+
+>>>>>>> 0aeccc97659627b485b890d276aac3782bd3a444
 
     
   }
