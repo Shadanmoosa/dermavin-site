@@ -111,7 +111,7 @@ label {
     width: 0px;
 }
 
-@media (max-width: 1440px) and (min-width: 770px) {
+@media (min-width: 770px) {
     .logo {
         display: none !important;
 
@@ -120,6 +120,7 @@ label {
         display: none  !important;
     }
 }
+
 
 @media (max-width: 1350px) {
     .search-input{
