@@ -85,7 +85,6 @@ window.addEventListener('scroll', function() {
     const homeSection = document.getElementById('dash');
     const serviceSection = document.getElementById('ns');
     
-    const homeSectionTop = homeSection.offsetTop;
     const serviceSectionTop = serviceSection.offsetTop;
     const scrollPosition = window.scrollY;
 
@@ -95,3 +94,46 @@ window.addEventListener('scroll', function() {
         document.getElementById('chages').style.marginTop='-85px';  
     }
 });
+
+
+
+async function getWeather() {
+    const cityName = document.getElementById('city-name').value;
+    const resultsDiv = document.getElementById('results');
+    resultsDiv.innerHTML = '';
+
+    if (cityName.trim() === '') {
+        alert('Please enter a city name.');
+        return;
+    }
+
+    const url = `https://open-weather13.p.rapidapi.com/city/${encodeURIComponent(cityName)}/EN`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'x-rapidapi-key': 'f90ee5d99dmsh7c8c9fe4a4cf0e8p1e97ccjsnedb504a92c8e',
+            'x-rapidapi-host': 'open-weather13.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        
+        if (result) {
+            resultsDiv.innerHTML = `
+                <h2>Weather in ${result.name}</h2>
+                <p>Temperature: ${result.main.temp}°C</p>
+                <p>Weather: ${result.weather[0].description}</p>
+                <p>Humidity: ${result.main.humidity}%</p>
+                <p>Wind Speed: ${result.wind.speed} m/s</p>
+            `;
+        } else {
+            resultsDiv.innerHTML = '<p>No weather data found.</p>';
+        }
+    } catch (error) {
+        resultsDiv.innerHTML = '<p>Error fetching data.</p>';
+        console.error('Error:', error);
+    }
+}
+

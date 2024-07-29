@@ -111,6 +111,19 @@ label {
     width: 0px;
 }
 
+
+@media (max-width: 993px) {
+    .sidebarfull{
+        display: none !important;
+    }
+    .third{
+        display: none !important;
+    }
+ }
+
+
+
+
 @media (min-width: 770px) {
     .logo {
         display: none !important;
@@ -202,15 +215,9 @@ label {
     }
  }
 
- @media (min-height: 1200px) {
-    .sidebarfull{
-        display: none !important;
-    }
-    .third{
-        display: none !important;
-    }
 
- }
+
+
 
 
 
