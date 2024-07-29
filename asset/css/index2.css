@@ -132,6 +132,7 @@ label {
     .togler{
         display: none  !important;
     }
+
 }
 
 
@@ -179,7 +180,13 @@ label {
     margin-left: -15px !important;
 
 }
-
+.topa{
+    margin-left: 2px !important;
+    width: 100%;
+}
+.b{
+    padding-right: 240px !important;
+}
 }
 
 @media (max-width: 436px) {
@@ -195,7 +202,16 @@ label {
    }
    .msgg{
     margin-left: -1% !important;
-}
+    }
+    .topa{
+        margin-left: -20px !important;
+    }
+    .b{
+        padding-right: 150px !important;
+    }
+    .logo{
+        margin-left: 100px !important;
+    }
 
 
 }
@@ -207,6 +223,14 @@ label {
     .main{
         margin-left: 10px !important;
     }
+    .logo{
+        margin-left: -20px !important;
+    }
+    .b{
+        padding-right: 10px !important;
+    }
+
+
  }
 
  @media (max-width: 376px) {

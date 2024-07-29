@@ -122,7 +122,7 @@ async function getWeather() {
         
         if (result) {
             resultsDiv.innerHTML = `
-                <h2>Weather in ${result.name}</h2>
+                <h3>Weather in ${result.name}</h3>
                 <p>Temperature: ${result.main.temp}°C</p>
                 <p>Weather: ${result.weather[0].description}</p>
                 <p>Humidity: ${result.main.humidity}%</p>
