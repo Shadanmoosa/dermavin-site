@@ -23,7 +23,7 @@
                     <img class="nh" src="asset/image/Dermavin.png" alt="" style="height: 23px; margin-left: 6px;">
                 </div>
                 <div class="psa">
-                    <div class="input-group position-relative search">
+                    <div class="input-group position-relative search" style="margin-left: -15px;">
                         <input  style="height: 45px; width: 780px; border-radius: 15px; background-color: #EFEFEF; border: none;" class="form-control search-input" type="text" placeholder="Search..">
                         <img   src="asset/image/search_icon-2.png" alt="" class="search-icon">
                     </div>
@@ -72,8 +72,8 @@
                 <!-- finish active button -->
                 <li class="nav-item sidebar" >
                     <button class="btn btn1">
-                    <img class="sideimage" src="asset/image/calc.png" alt="">
-                    <a href="#ns"  id="msg" style="text-decoration: none; color: white;">Calculator</a>  
+                    <img class="sideimage" src="asset/image/weather.png" alt="">
+                    <a href="#ns"  id="msg" style="text-decoration: none; color: white;">Weather</a>  
                 </li>
                 <li class="nav-item sidebar"  >
                     <button class="btn btn1">
@@ -171,8 +171,8 @@
                 </li>
                 <li class="nav-item sidebar" >
                     <button class="btn btn1">
-                    <img class="sideimage"   src="asset/image/calc.png" alt="">
-                    <a href="#ns" style="text-decoration: none; color: white;">Calculator</a>  
+                    <img class="sideimage"   src="asset/image/weather.png" alt="">
+                    <a href="#ns" style="text-decoration: none; color: white;">Weather</a>  
                 </li>
                 <!-- for active button -->
                 <div style="background-color: #fe791a3b; height: 45px; width: 100%; margin-top: -85px; z-index: -1; " id="chages"></div>
@@ -395,14 +395,15 @@
             <!-- stock ends -->
 
             <!-- msg section -->
-            <div class="col-lg-11 col-md-11 col-sm-11" id="ns">
-                <div style="width: 100%; height: 85vh">
+            <div class="container">
+                <div class="col-lg-11 col-md-11 col-sm-11" id="ns" style="margin-top: 30px;">
+                    <h3 style="text-align: center; padding-top: 50px;">Get Weather Information</h3>
+                    <div class="results" id="results" style="width: 100%; height: 70vh;"></div>
+                    <div class="input-group mb-3 msgg" style="margin: 30px;">
+                        <input type="text" class="form-control" placeholder="Enter city name" aria-label="" aria-describedby="button-addon2" id="city-name">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="getWeather()">Get Weather</button>
+                    </div>
                 </div>
-                <div class="input-group mb-3 msgg" style="margin: 30px;">
-                    <input type="text" class="form-control" placeholder="Type Here...." aria-label="" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBMIT</button>
-                  </div>    
-
             </div>
             <!--msg ends-->
 
