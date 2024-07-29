@@ -88,7 +88,7 @@ window.addEventListener('scroll', function() {
     const serviceSectionTop = serviceSection.offsetTop;
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= serviceSectionTop - 25) {
+    if (scrollPosition >= serviceSectionTop - 35) {
         document.getElementById('chages').style.marginTop='-42px'; 
     } else {
         document.getElementById('chages').style.marginTop='-85px';  
